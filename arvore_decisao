@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Idade  &le; 54.5<br/>gini = 0.5<br/>samples = 97<br/>value = [48.5, 48.5]<br/>class = Positivo>, fillcolor="#ffffff"] ;
+1 [label=<Peso &le; 76.5<br/>gini = 0.438<br/>samples = 38<br/>value = [28.292, 13.516]<br/>class = Negativo>, fillcolor="#f1bd98"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.315<br/>samples = 24<br/>value = [22.903, 5.566]<br/>class = Negativo>, fillcolor="#eba069"] ;
+1 -> 2 ;
+3 [label=<gini = 0.482<br/>samples = 14<br/>value = [5.389, 7.951]<br/>class = Positivo>, fillcolor="#bfdff7"] ;
+1 -> 3 ;
+4 [label=<Neropatia periférica &le; 0.5<br/>gini = 0.464<br/>samples = 59<br/>value = [20.208, 34.984]<br/>class = Positivo>, fillcolor="#abd6f4"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.5<br/>samples = 39<br/>value = [18.861, 19.877]<br/>class = Positivo>, fillcolor="#f5fafe"] ;
+4 -> 5 ;
+6 [label=<gini = 0.15<br/>samples = 20<br/>value = [1.347, 15.107]<br/>class = Positivo>, fillcolor="#4ba6e7"] ;
+4 -> 6 ;
+}
